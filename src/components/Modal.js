@@ -49,7 +49,7 @@ const Modal = ({
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', paddingTop: 20 }}>
         <div style={{ marginBottom: 20 }}>
-          <input type="file" onChange={onHandleImage}/>
+          <input type="file" accept="image/png, image/jpeg" onChange={onHandleImage}/>
           {selectedImg || formValue.image ? <img style={{ height: 100, width: 200, objectFit: 'contain' }} src={selectedImg || formValue.image}/> : <div />}
         </div>
         <input
